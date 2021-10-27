@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDeberSemana2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="7" CornerRadius="0">
+            <Label Text="Aplicacion para calculo Notas Uisrael" HorizontalTextAlignment="Start" TextColor="White" FontSize="16"/>
+        </Frame>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Usuario Conectado" Grid.Row="0" Grid.Column="0"/>
+            <Label x:Name="lblUsuario" Grid.Row="0" Grid.Column="1"/>
+
+        </Grid>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+            <Label Text="Primer Parcial" Grid.Row="0" Grid.Column="0"/>
+            <Label Text="Nota Sige" Grid.Row="0" Grid.Column="2"/>
+            <Label Text="Ingrese Nota 1" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtValor1" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+            <Entry x:Name="txtPorcen1" IsReadOnly="True" Grid.Row="1" Grid.Column="2"/>
+
+            <Label Text="Ingrese nota 2" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="txtValor2" Keyboard="Numeric" Grid.Row="2" Grid.Column="1"/>
+            <Entry x:Name="txtPorcen2" IsReadOnly="True" Grid.Row="2" Grid.Column="2"/>
+
+            <Label Text="Nota total parcial 1" Grid.Row="3" Grid.Column="0"/>
+            <Entry x:Name="txtResultado" IsReadOnly="True" Grid.Row="3" Grid.Column="1"/>
+
+            <Label Text="Segundo Parcial" Grid.Row="4" Grid.Column="0"/>
+            <Label Text="Nota Sige" Grid.Row="4" Grid.Column="2"/>
+            <Label Text="Ingrese Nota 1" Grid.Row="5" Grid.Column="0"/>
+            <Entry x:Name="txtValor3" Keyboard="Numeric" Grid.Row="5" Grid.Column="1"/>
+            <Entry x:Name="txtPorcen3" IsReadOnly="True" Grid.Row="5" Grid.Column="2"/>
+
+            <Label Text="Ingrese nota 2" Grid.Row="6" Grid.Column="0"/>
+            <Entry x:Name="txtValor4" Keyboard="Numeric" Grid.Row="6" Grid.Column="1"/>
+            <Entry x:Name="txtPorcen4" IsReadOnly="True" Grid.Row="6" Grid.Column="2"/>
+
+            <Label Text="Nota total parcial 1" Grid.Row="7" Grid.Column="0"/>
+            <Entry x:Name="txtResultado1" IsReadOnly="True" Grid.Row="7" Grid.Column="1"/>
+
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                
+                
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nota Total" Grid.Row="0" Grid.Column="0"/>
+            <Entry x:Name="txtValor5" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+        </Grid>
+
+        <Button x:Name="btnSumar" Text="Calcular" Clicked="btnSumar_Clicked" />
+       
+        
+
+    </StackLayout>
+
+</ContentPage>
